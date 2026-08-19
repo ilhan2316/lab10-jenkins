@@ -17,9 +17,6 @@ pipeline {
         }
         stage('Test') {
             steps {
-                dir('./starter') {
-                    sh 'mvn -B test'
-                }
                 sh 'mvn -B test'
             }
             post {
